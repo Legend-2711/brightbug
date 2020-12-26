@@ -1,0 +1,208 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.0">
+  <meta name="author" content="Legend_2711 (Shreyas)">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="126578063377-j10bfmhcb5ncorirdd6oigt36fduk5gj.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+	<title>BrightBug Education</title>
+	<link rel = "icon" href =  
+"https://i.postimg.cc/9Q1zGz05/BBE.png" 
+        type = "image/x-icon" class="x-icon"> 
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+<style type="text/css">
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:  'Poppins', sans-serif;
+}
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 100px;
+	z-index: 1000;
+}
+
+header .logo{
+	position: relative;
+	font-size: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+header .logo span
+{
+	color: #007eff;
+}
+
+header .toggle
+{
+	max-width:60px;
+	cursor: pointer;
+}
+header .toggle img
+{
+	max-width:100%;
+}
+.banner
+{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 0 100px;
+	background: url("https://i.postimg.cc/d04RXtDc/business-woman-working-on-desk-850630688-5b35962f46e0fb00370dc606.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.banner .textBox
+{
+	position: relative;
+	display: block;
+	max-width: 805px;
+	z-index: 2;
+}
+.banner .textBox h2
+{
+	color: #fff;
+	font-size: 3em;
+}
+.banner .textBox p
+{
+	color: #fff;
+	font-size: 1.1em;
+	margin: 5px 0 25px;
+}
+.banner .textBox button
+{
+	position: relative;
+	display: inline-block;
+	background: #fff;
+	color: #111;
+	padding: 15px 25px;
+	text-decoration: none;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 500;
+	border: none;
+	border-radius: 10px;
+}
+.banner .imgBox {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    z-index: 2;
+}
+.banner .imgBox img
+{
+	position: absolute;
+	bottom: 0;
+	height: 80%;
+	z-index: 10000;
+}
+.sci
+{
+	position: absolute;
+	bottom: 20px;
+	letter-spacing: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sci li
+{
+	list-style: none;
+}
+.sci li a
+{
+	display: inline-block;
+	margin-right: 15px;
+}
+.sci li a img
+{
+	transform: scale(0.5);
+	filter: invert(1);
+}
+@media (max-width: 991px)
+{
+	header 
+	{
+		padding: 20px 50px;
+	}
+	.banner
+	{
+		    padding: 150px 50px 0;
+    
+	}
+}
+.logBox{
+	background: url("https://i.postimg.cc/d04RXtDc/business-woman-working-on-desk-850630688-5b35962f46e0fb00370dc606.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: none;
+}
+</style>
+
+</head>
+<body>
+<header class ="header">
+	<a href="index.html" class="logo"><span>Bright</span>Bug </a>
+	<div class="toggle"><img src="https://i.postimg.cc/9Q1zGz05/BBE.png"></div>
+</header>
+<div class="banner">
+
+<div class="textBox">
+		<h2>Love It To Live It</h2>
+	<p>Learn To Code For Free at BrightBug, a platform where you can learn to code and also get to know some common mistakes that programmers make in their code and how to correct them. 		Hope you have a great experience here. :)</p>
+	<a href="Dashboard/index.html"><button id="readBut">Read More</button></a>
+<!--  <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+		console.log("ID Token: " + id_token);
+      }
+	</script>
+	-->
+
+</div>
+<div class="imgBox">
+	
+</div>
+<div class="logBox">
+	Login
+</div>
+<ul class="sci">
+	<li><a href="#"><img src="https://i.postimg.cc/131SYZd5/facebook.png"></a></li>
+	<li><a href="#"><img src="https://i.postimg.cc/RF2CSJgw/twitter.png"></a></li>
+	<li><a href="#"><img src="https://i.postimg.cc/cJ9wcTJZ/instagram.png"></a></li>
+</ul>
+</div>
+</body>
+</html>
