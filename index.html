@@ -1,189 +1,45 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="author" content="Legend_2711 (Shreyas)">
-<meta name="google-signin-scope" content="profile email">
-<meta name="google-signin-client_id" content="428752868833-l0akpkepi2l59spu8n6ji9tmpn51eiii.apps.googleusercontent.com">
-<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
 	<title>BrightBug Education</title>
-	<link rel = "icon" href="images/BBE.png" type = "image/x-icon" class="x-icon"> 
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
-<style type="text/css">
-*
-{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family:  'Poppins', sans-serif;
-}
-header{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 40px 100px;
-	z-index: 1000;
-}
-
-header .logo{
-	position: relative;
-	font-size: 30px;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 700;
-	letter-spacing: 2px;
-	text-decoration: none;
-}
-header .logo span
-{
-	color: #007eff;
-}
-
-header .toggle
-{
-	max-width:60px;
-	cursor: pointer;
-}
-header .toggle img
-{
-	max-width:100%;
-}
-.banner
-{
-	position: relative;
-	min-height:100vh;
-	max-height:100vh;
-	padding: 0 100px;
-	background: url("images/bg.jpg") no-repeat;
-	background-size: cover;
-	background-position: center;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-}
-
-.banner .textBox
-{
-	position: relative;
-	display: block;
-	max-width: 70%;
-	z-index: 2;
-}
-.banner .textBox h2
-{
-	color: #fff;
-	font-size: 3em;
-}
-.banner .textBox p
-{
-	color: #fff;
-	font-size: 1.1em;
-	margin: 5px 0 25px;
-}
-.banner .textBox button
-{
-	position: relative;
-	display: inline-block;
-	background: #fff;
-	color: #111;
-	padding: 15px 25px;
-	text-decoration: none;
-	font-size: 1.1em;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: 500;
-	border: none;
-	border-radius: 10px;
-}
-
-.sci
-{
-	position: absolute;
-	bottom: 20px;
-	letter-spacing: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.sci li
-{
-	list-style: none;
-}
-.sci li a
-{
-	display: inline-block;
-	margin-right: 15px;
-}
-.sci li a img
-{
-	transform: scale(0.5);
-	filter: invert(1);
-}
-@media (max-width: 991px)
-{
-	header 
-	{
-		padding: 20px 50px;
-	}
-	.banner
-	{
-		    padding: 150px 50px 0;
-    
-	}
-}
-.logBox{
-	background: url("images/bg.jpg") no-repeat;
-	background-size: cover;
-	background-position: center;
-	display: none;
-}
-</style>
-
+	<link rel = "icon" href="toggle.png" type = "image/x-icon" class="x-icon">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-<header class ="header">
-	<a href="index.html" class="logo"><span>Bright</span>Bug </a>
-	<div class="toggle"><img src="images/BBE.png"></div>
-</header>
-<div class="banner">
-
-<div class="textBox">
-		<h2>Love It To Live It</h2>
-	<p>Learn To Code For Free at BrightBug, a platform where you can learn to code and also get to know some common mistakes that programmers make in their code and how to correct them. 		Hope you have a great experience here. :)</p>
-	<a href="Dashboard/index.html"><button id="readBut">Read More</button></a>
- <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-	<script>
-      function onSignIn(googleUser) {
-        // Useful data for your client-side scripts:
-        var profile = googleUser.getBasicProfile();
-        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-        console.log('Full Name: ' + profile.getName());
-        console.log('Given Name: ' + profile.getGivenName());
-        console.log('Family Name: ' + profile.getFamilyName());
-        console.log("Image URL: " + profile.getImageUrl());
-        console.log("Email: " + profile.getEmail());
-
-        // The ID token you need to pass to your backend:
-        var id_token = googleUser.getAuthResponse().id_token;
-		console.log("ID Token: " + id_token);
-      }
-	</script>
-
-
+	<div class="loader">
+        <div></div>
+    </div>
+	<div class="content">
+	<header>
+		<a href="#" class="logo"><span>BRIGHT</span>BUG</a>
+		<div class="toggle"><img src="toggle.png"></div>
+	</header>
+	<div class="banner">
+		<video src="bg1.mp4" autoplay muted loop type="mp4"></video>
+		<div class="textBox">
+			<h2>BrightBug Helps You Debug</h2>
+			<p>Learn To Code For Free at BrightBug, a platform where you can learn to code and also get to know some common mistakes that programmers make in their code and how to correct them. Hope you have a great experience here. :)</p>
+			<a href="#">Dashboard</a>
+			<a href="#">Login/SignUp</a>
+		</div>
+		<div class="imgBox">
+			<img src="man.png">
+		</div>
+		<ul class="sci">
+			<li><a href="#"><img src="facebook.png"></a></li>
+			<li><a href="#"><img src="twitter.png"></a></li>
+			<li><a href="#"><img src="instagram.png"></a></li>
+		</ul>
+	</div>
 </div>
-
-<div class="logBox">
-	Login
-</div>
-<ul class="sci">
-	<li><a href="#"><img src="images/fb.png"></a></li>
-	<li><a href="#"><img src="images/twitter.png"></a></li>
-	<li><a href="#"><img src="images/ig.png"></a></li>
-
-</ul>
-</div>
+<script>
+	$(window).on('load',function(){
+		$(".loader").fadeOut(1000);
+		$(".content").fadeIn(1000);
+	});
+</script>
 </body>
 </html>
