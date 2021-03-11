@@ -149,7 +149,7 @@ header .toggle img
 	filter: invert(1);
 
 }
-@media (max-width: 991px)
+	@media (max-width: 1244px)
 {
 	header
 	{
