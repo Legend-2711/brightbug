@@ -147,7 +147,7 @@ header .toggle img
 {
 	transform: scale(0.5);
 	filter: invert(1);
-
+	height:47.5px;
 }
 	@media (max-width: 1244px)
 {
